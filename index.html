@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deconstrucción del Género & Diversidad Sexual | Infografía Académica | Unidad 2</title>
+  <meta name="description" content="Infografía académica interactiva sobre la deconstrucción de la categoría de género, diversidad sexual e inclusión social. Universidad del Quindío." />
+  <meta name="author" content="Universidad del Quindío" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== FLOATING CONTROLS ===== -->
+  <div class="floating-controls" id="floatingControls" role="toolbar" aria-label="Controles de la infografía">
+    <button class="btn-float btn-theme" id="themeToggle" title="Alternar modo claro/oscuro" aria-label="Alternar tema">
+      <span class="icon-sun">☀️</span>
+      <span class="icon-moon">🌙</span>
+    </button>
+    <button class="btn-float btn-print" id="printBtn" title="Exportar / Imprimir Infografía" aria-label="Imprimir infografía">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+        <rect x="6" y="14" width="12" height="8"></rect>
+      </svg>
+      <span>Exportar PDF</span>
+    </button>
+  </div>
+
+  <!-- ===== MAIN WRAPPER ===== -->
+  <div class="infographic-wrapper" id="infographicWrapper">
+
+    <!-- Institutional Header Strip (Print / PDF Export only) -->
+    <div class="print-header-banner" aria-hidden="true">
+      <div class="phb-brand">
+        <span class="phb-inst">Universidad del Quindío</span>
+        <span class="phb-fac">Facultad de Ingeniería · Ing. de Sistemas y Computación</span>
+      </div>
+      <div class="phb-meta">
+        <span class="phb-course">Ciencias Sociales · Unidad 2</span>
+        <span class="phb-doc">Infografía Académica Oficial</span>
+      </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="infographic-header" role="banner">
+      <div class="header-bg-image">
+        <img src="hero_banner.jpg" alt="Ilustración conceptual sobre género y diversidad" loading="eager" />
+        <div class="header-overlay"></div>
+      </div>
+      <div class="header-content">
+        <div class="header-badge">
+          <span class="badge-dot"></span>
+          Infografía Académica · Unidad 2
+        </div>
+        <h1 class="header-title">
+          Deconstrucción del <span class="gradient-text">Género</span><br />
+          <span class="gradient-text-2">&amp; Diversidad Sexual</span>
+        </h1>
+        <p class="header-subtitle">
+          Desmontando el binarismo: cuerpo, cultura, identidad y derechos fundamentales
+        </p>
+
+        <!-- Tarjeta de Identificación del Estudiante / Autor -->
+        <div class="student-author-card" id="studentCard">
+          <div class="student-avatar-wrapper">
+            <div class="student-avatar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <span class="student-status-dot" title="Autor registrado"></span>
+          </div>
+          <div class="student-details">
+            <div class="student-top-row">
+              <span class="student-badge">Autor / Expositor</span>
+              <span class="student-id-pill">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="16" rx="3"></rect>
+                  <circle cx="9" cy="10" r="2"></circle>
+                  <line x1="15" y1="8" x2="17" y2="8"></line>
+                  <line x1="15" y1="12" x2="17" y2="12"></line>
+                  <line x1="7" y1="16" x2="17" y2="16"></line>
+                </svg>
+                CC: 1001361185
+              </span>
+            </div>
+            <div class="student-name">Santiago Arbelaez Contreras</div>
+            <p class="student-program">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              Estudiante de Ingeniería de Sistemas y Computación
+            </p>
+          </div>
+        </div>
+
+        <div class="header-meta">
+          <div class="meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            Universidad del Quindío
+          </div>
+          <div class="meta-divider">·</div>
+          <div class="meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Ciencias Sociales · 2025
+          </div>
+          <div class="meta-divider">·</div>
+          <div class="meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Lectura estimada: 8 min
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Explorar</span>
+      </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main role="main">
+
+      <!-- ===== BLOQUE 1: TRÍADA DIFERENCIAL ===== -->
+      <section class="section-block" id="triada" aria-labelledby="triada-heading">
+        <div class="section-label">Bloque 01</div>
+        <h2 class="section-title" id="triada-heading">
+          La Tríada <span class="highlight">Diferencial</span>
+        </h2>
+        <p class="section-intro">
+          Tres dimensiones distintas, frecuentemente confundidas, que conforman la complejidad de la experiencia humana.
+          El filtro interactivo te permite explorar cada concepto en profundidad.
+        </p>
+
+        <!-- FILTER TABS -->
+        <div class="triada-filter" role="tablist" aria-label="Filtro de conceptos">
+          <button class="filter-tab active" role="tab" id="tab-all" aria-controls="triada-cards" aria-selected="true" data-filter="all">Todos</button>
+          <button class="filter-tab" role="tab" id="tab-sexo" aria-controls="triada-cards" aria-selected="false" data-filter="sexo">Sexo Biológico</button>
+          <button class="filter-tab" role="tab" id="tab-genero" aria-controls="triada-cards" aria-selected="false" data-filter="genero">Género</button>
+          <button class="filter-tab" role="tab" id="tab-orientacion" aria-controls="triada-cards" aria-selected="false" data-filter="orientacion">Orientación Sexual</button>
+        </div>
+
+        <div class="triada-cards" id="triada-cards" role="tabpanel">
+
+          <article class="concept-card card-sexo" data-concept="sexo" tabindex="0" aria-label="Sexo Biológico">
+            <div class="card-glow card-glow-cyan"></div>
+            <div class="card-icon-wrap">
+              <div class="card-icon icon-cyan">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M24 8 C24 8 20 14 16 18 C12 22 8 24 8 28 C8 36 15 42 24 42 C33 42 40 36 40 28 C40 24 36 22 32 18 C28 14 24 8 24 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                  <circle cx="24" cy="20" r="4" fill="currentColor" opacity="0.3"/>
+                  <path d="M18 32 Q24 28 30 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M20 36 Q24 34 28 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-header-label label-cyan">Nivel Corpóreo / Anatómico</div>
+            <h3 class="card-title">Sexo Biológico</h3>
+            <p class="card-desc">
+              Conjunto de características biológicas, anatómicas y genéticas que incluyen órganos genitales, cromosomas (XX, XY, entre otros) y hormonas. La sociedad históricamente lo ha reducido al binarismo macho/hembra asignado al nacer.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-cyan">Cromosomas</span>
+              <span class="tag tag-cyan">Hormonas</span>
+              <span class="tag tag-cyan">Anatomía</span>
+              <span class="tag tag-cyan">Intersexualidad</span>
+            </div>
+            <div class="card-expandable" id="expand-sexo">
+              <div class="expand-content">
+                <p>La biología contemporánea reconoce que el sexo mismo es <strong>un espectro</strong>. Las personas intersexuales representan hasta el 1.7% de la población, evidenciando que incluso la categoría biológica es más compleja que el binarismo tradicional.</p>
+                <div class="stat-row">
+                  <div class="stat-item">
+                    <span class="stat-number">1.7%</span>
+                    <span class="stat-label">Personas intersexuales globalmente</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">+30</span>
+                    <span class="stat-label">Combinaciones cromosómicas documentadas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="card-expand-btn" data-target="expand-sexo" aria-expanded="false">
+              <span class="expand-text">Ver más</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </article>
+
+          <article class="concept-card card-genero" data-concept="genero" tabindex="0" aria-label="Género">
+            <div class="card-glow card-glow-violet"></div>
+            <div class="card-icon-wrap">
+              <div class="card-icon icon-violet">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/>
+                  <path d="M24 10 L24 6 M18 8 L24 6 L30 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 20 Q24 16 32 20 Q24 28 16 20Z" fill="currentColor" opacity="0.2"/>
+                  <path d="M16 28 Q24 24 32 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-header-label label-violet">Construcción Sociocultural</div>
+            <h3 class="card-title">Género</h3>
+            <p class="card-desc">
+              Roles, normas, expectativas, conductas e imaginarios colectivos que cada cultura y época asigna sobre lo "femenino" o "masculino". Es dinámico, cambiante y deconstruible. No es innato ni universal.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-violet">Identidad</span>
+              <span class="tag tag-violet">Expresión</span>
+              <span class="tag tag-violet">Roles Sociales</span>
+              <span class="tag tag-violet">Deconstruible</span>
+            </div>
+            <div class="card-expandable" id="expand-genero">
+              <div class="expand-content">
+                <p>El género es aprendido a través de la <strong>socialización</strong>. Judith Butler (1990) argumentó que el género es una <em>performance</em> —una actuación repetida de normas culturales— no una esencia fija. Las identidades de género incluyen: mujer, hombre, no binarie, genderfluid, agénero, entre muchas otras.</p>
+                <div class="stat-row">
+                  <div class="stat-item">
+                    <span class="stat-number">+50</span>
+                    <span class="stat-label">Identidades de género documentadas culturalmente</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">1990</span>
+                    <span class="stat-label">Butler publica "El género en disputa"</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="card-expand-btn" data-target="expand-genero" aria-expanded="false">
+              <span class="expand-text">Ver más</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </article>
+
+          <article class="concept-card card-orientacion" data-concept="orientacion" tabindex="0" aria-label="Orientación Sexual">
+            <div class="card-glow card-glow-rose"></div>
+            <div class="card-icon-wrap">
+              <div class="card-icon icon-rose">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M24 36 C24 36 10 26 10 18 C10 13 14 10 18 10 C21 10 24 12 24 12 C24 12 27 10 30 10 C34 10 38 13 38 18 C38 26 24 36 24 36Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                  <path d="M14 22 Q19 18 24 22 Q29 18 34 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="card-header-label label-rose">Vínculo Afectivo / Deseo</div>
+            <h3 class="card-title">Orientación Sexual</h3>
+            <p class="card-desc">
+              Capacidad autónoma de sentir atracción física, emocional, romántica o sexual hacia personas de distinto o igual género/sexo. Es independiente del sexo asignado al nacer y de la identidad de género.
+            </p>
+            <div class="card-tags">
+              <span class="tag tag-rose">Heterosexual</span>
+              <span class="tag tag-rose">Homosexual</span>
+              <span class="tag tag-rose">Bisexual</span>
+              <span class="tag tag-rose">Pansexual</span>
+            </div>
+            <div class="card-expandable" id="expand-orientacion">
+              <div class="expand-content">
+                <p>Alfred Kinsey (1948) propuso la primera escala de orientación sexual, demostrando que la sexualidad es un <strong>continuum</strong>, no una categoría binaria. Hoy se reconoce además la <em>orientación romántica</em> como dimensión separada de la atracción sexual.</p>
+                <div class="stat-row">
+                  <div class="stat-item">
+                    <span class="stat-number">1948</span>
+                    <span class="stat-label">Escala Kinsey introduce el espectro</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">~5%</span>
+                    <span class="stat-label">Población LGBT+ en Latinoamérica (estimado)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="card-expand-btn" data-target="expand-orientacion" aria-expanded="false">
+              <span class="expand-text">Ver más</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </article>
+
+        </div>
+
+        <!-- Visual comparison banner -->
+        <figure class="triada-visual" aria-label="Representación visual de la tríada conceptual">
+          <img src="triada_icons.jpg" alt="Iconos conceptuales: ADN, género y conexión emocional" loading="lazy" />
+          <figcaption>Representación visual de las tres dimensiones: biológica, social y afectiva</figcaption>
+        </figure>
+      </section>
+
+      <!-- ===== BLOQUE 2: CUERPO COMO TERRITORIO ===== -->
+      <section class="section-block section-alt" id="cuerpo" aria-labelledby="cuerpo-heading">
+        <div class="bento-grid-2">
+          <div class="bento-text-col">
+            <div class="section-label">Bloque 02</div>
+            <h2 class="section-title" id="cuerpo-heading">
+              El Cuerpo como <span class="highlight-cyan">Territorio</span> Social y Simbólico
+            </h2>
+            <blockquote class="academic-quote">
+              <div class="quote-mark">"</div>
+              <p>El cuerpo humano es una unidad biológicamente cambiante atravesada por significados culturales que la sociedad impone, modela y transforma a través del tiempo.</p>
+              <footer>
+                <cite>— Salinas, 1994</cite>
+              </footer>
+            </blockquote>
+            <div class="body-concepts">
+              <div class="body-concept-item">
+                <div class="bci-icon bci-language">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <div>
+                  <h4>Intervención del Lenguaje</h4>
+                  <p>El lenguaje no describe los cuerpos: los <em>construye</em>. Las palabras que usamos para nombrar cuerpos y conductas moldean lo que consideramos "normal" o "desviado".</p>
+                </div>
+              </div>
+              <div class="body-concept-item">
+                <div class="bci-icon bci-stereo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                </div>
+                <div>
+                  <h4>Estereotipos como Control</h4>
+                  <p>Los estereotipos de género operan como mecanismos de control social: normalizan jerarquías, asignan roles y sancionan (formal e informalmente) a quienes los transgreden.</p>
+                </div>
+              </div>
+              <div class="body-concept-item">
+                <div class="bci-icon bci-identity">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </div>
+                <div>
+                  <h4>Identidad Corporal Situada</h4>
+                  <p>La identidad no es un dato fijo del cuerpo: emerge de la intersección entre biología, cultura, historia personal y relaciones de poder en contextos específicos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bento-image-col">
+            <figure class="body-image-wrap">
+              <img src="body_territory.jpg" alt="Cuerpo humano como territorio de significados culturales y sociales" loading="lazy" />
+              <div class="image-caption-overlay">
+                <span>El cuerpo como texto cultural</span>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== BLOQUE 3: EVOLUCIÓN HISTÓRICA ===== -->
+      <section class="section-block" id="historia" aria-labelledby="historia-heading">
+        <div class="section-label">Bloque 03</div>
+        <h2 class="section-title" id="historia-heading">
+          Evolución Histórica & <span class="highlight">Ruptura de Paradigmas</span>
+        </h2>
+        <p class="section-intro">Un recorrido por los hitos que transformaron la comprensión de la diversidad humana.</p>
+
+        <figure class="timeline-visual" aria-label="Línea del tiempo de la evolución histórica">
+          <img src="timeline_evolution.jpg" alt="Visualización abstracta de la evolución histórica del reconocimiento de la diversidad sexual" loading="lazy" />
+          <figcaption>Del binarismo restrictivo al reconocimiento de la diversidad como manifestación humana legítima</figcaption>
+        </figure>
+
+        <div class="timeline-path" role="list" aria-label="Hitos históricos">
+
+          <div class="timeline-item tl-left" role="listitem">
+            <div class="tl-connector">
+              <div class="tl-dot tl-dot-indigo"></div>
+              <div class="tl-line"></div>
+            </div>
+            <article class="tl-card glass-card">
+              <div class="tl-year">1859</div>
+              <h3 class="tl-title">El Binarismo Reproductor</h3>
+              <p>Darwin publica <em>"El origen de las especies"</em>. Las visiones evolucionistas centran la sexualidad exclusivamente en la reproducción, ignorando su dimensión afectiva, social y diversa. Se instala el paradigma heteronormativo como "natural".</p>
+              <div class="tl-tag tl-tag-indigo">Paradigma Binarista</div>
+            </article>
+          </div>
+
+          <div class="timeline-item tl-right" role="listitem">
+            <div class="tl-connector">
+              <div class="tl-dot tl-dot-rose"></div>
+              <div class="tl-line"></div>
+            </div>
+            <article class="tl-card glass-card">
+              <div class="tl-year">1952–1973</div>
+              <h3 class="tl-title">La Patologización</h3>
+              <p>El <em>DSM</em> (Manual Diagnóstico y Estadístico de Trastornos Mentales) clasifica la homosexualidad como "trastorno mental". Esto legitima prácticas de "terapias de conversión" y discriminación sistemática basada en autoridad médica.</p>
+              <div class="tl-tag tl-tag-rose">Patologización</div>
+            </article>
+          </div>
+
+          <div class="timeline-item tl-left" role="listitem">
+            <div class="tl-connector">
+              <div class="tl-dot tl-dot-violet"></div>
+              <div class="tl-line"></div>
+            </div>
+            <article class="tl-card glass-card">
+              <div class="tl-year">1973</div>
+              <h3 class="tl-title">Primera Desclasificación</h3>
+              <p>La APA elimina la homosexualidad del DSM tras años de activismo y nueva evidencia científica. Es un hito crucial que separa la orientación sexual de la psicopatología, aunque el proceso de destigmatización social tardaría décadas más.</p>
+              <div class="tl-tag tl-tag-violet">Ruptura Psiquiátrica</div>
+            </article>
+          </div>
+
+          <div class="timeline-item tl-right" role="listitem">
+            <div class="tl-connector">
+              <div class="tl-dot tl-dot-cyan"></div>
+              <div class="tl-line"></div>
+            </div>
+            <article class="tl-card glass-card">
+              <div class="tl-year">1990 / 1993</div>
+              <h3 class="tl-title">OMS: Reconocimiento Internacional</h3>
+              <p>La Organización Mundial de la Salud elimina la homosexualidad de su Clasificación Internacional de Enfermedades (CIE-10) en 1990, con implementación plena en 1993. La diversidad sexual es reconocida oficialmente como una <strong>manifestación humana legítima y natural</strong>.</p>
+              <div class="tl-tag tl-tag-cyan">Despatologización OMS</div>
+            </article>
+          </div>
+
+          <div class="timeline-item tl-left" role="listitem">
+            <div class="tl-connector">
+              <div class="tl-dot tl-dot-indigo"></div>
+              <div class="tl-line"></div>
+            </div>
+            <article class="tl-card glass-card">
+              <div class="tl-year">S. XX – XXI</div>
+              <h3 class="tl-title">Medios, Cultura y Estereotipos</h3>
+              <p>Los medios de comunicación perpetúan estereotipos: la mujer relegada al hogar en comerciales, la homosexualidad como motivo de burla en entretenimiento. Pero también emergen contra-narrativas: la autonomía profesional femenina, la visibilidad LGBTQ+, y las políticas públicas de igualdad en Colombia y el mundo.</p>
+              <div class="tl-tag tl-tag-indigo">Tensión Cultural</div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== BLOQUE 4: INCLUSIÓN SOCIAL ===== -->
+      <section class="section-block section-alt" id="inclusion" aria-labelledby="inclusion-heading">
+        <div class="section-label">Bloque 04</div>
+        <h2 class="section-title" id="inclusion-heading">
+          Inclusión Social & <span class="highlight-cyan">Marco de Derechos</span>
+        </h2>
+
+        <div class="inclusion-bento">
+
+          <div class="inclusion-hero-card glass-card">
+            <figure>
+              <img src="inclusion_rights.jpg" alt="Personas diversas conectadas por redes de luz, escalando hacia la libertad y la igualdad de derechos" loading="lazy" />
+            </figure>
+            <div class="inclusion-hero-content">
+              <h3>Más allá de la Tolerancia</h3>
+              <p>La <strong>inclusión genuina</strong> no es "permitir la presencia" del otro. Es la transformación activa de las estructuras sociales, legales y culturales que producen exclusión, pobreza y violencia.</p>
+            </div>
+          </div>
+
+          <article class="inclusion-card glass-card" tabindex="0">
+            <div class="inc-icon inc-icon-scale">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M24 6 L24 42 M12 18 L36 18"/>
+                <path d="M12 18 L6 30 M12 18 L18 30"/>
+                <path d="M36 18 L30 30 M36 18 L42 30"/>
+                <path d="M4 30 L20 30 M28 30 L44 30"/>
+              </svg>
+            </div>
+            <h3>Derechos Jurídicos y Políticos</h3>
+            <p>Garantizar el acceso real —no solo formal— a derechos constitucionales: identidad, libre desarrollo de la personalidad, no discriminación. En Colombia, la Corte Constitucional ha sido un actor clave en el reconocimiento progresivo de estos derechos.</p>
+            <div class="inc-badges">
+              <span class="inc-badge">Art. 13 – Igualdad</span>
+              <span class="inc-badge">Art. 16 – Libre desarrollo</span>
+              <span class="inc-badge">Sent. C-577/2011</span>
+            </div>
+          </article>
+
+          <article class="inclusion-card glass-card" tabindex="0">
+            <div class="inc-icon inc-icon-edu">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M24 8 L44 18 L24 28 L4 18 Z"/>
+                <path d="M4 18 L4 32"/>
+                <path d="M12 22 L12 36 Q24 42 36 36 L36 22"/>
+              </svg>
+            </div>
+            <h3>Educación desde la Infancia</h3>
+            <p>Desmitificar el tabú sexual y de género desde etapas tempranas es fundamental. La educación sexual integral basada en derechos empodera a las personas para rechazar prejuicios, reconocer su propio cuerpo y respetar las diferencias de los demás.</p>
+            <div class="inc-badges">
+              <span class="inc-badge">Educación Integral</span>
+              <span class="inc-badge">Empoderamiento</span>
+              <span class="inc-badge">Sin prejuicios</span>
+            </div>
+          </article>
+
+          <article class="inclusion-card glass-card inclusion-card-wide" tabindex="0">
+            <div class="inc-icon inc-icon-intersect">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="24" r="12"/>
+                <circle cx="30" cy="24" r="12"/>
+              </svg>
+            </div>
+            <h3>Interseccionalidad: Clase, Raza y Género</h3>
+            <p>La exclusión social no actúa en una sola dimensión. Kimberlé Crenshaw (1989) acuñó el concepto de <em>interseccionalidad</em>: las personas enfrentan discriminaciones entrelazadas de género, raza, clase, orientación sexual y capacidad. Una política de inclusión real debe abordar esta complejidad simultánea, especialmente en el contexto colombiano de desigualdad estructural.</p>
+            <div class="inc-badges">
+              <span class="inc-badge">Interseccionalidad</span>
+              <span class="inc-badge">Crenshaw, 1989</span>
+              <span class="inc-badge">Contexto Colombiano</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ===== BLOQUE 5: REFLEXIÓN CRÍTICA ===== -->
+      <section class="section-block section-reflection" id="reflexion" aria-labelledby="reflexion-heading">
+        <div class="section-label">Bloque 05 · Reflexión Personal</div>
+        <h2 class="section-title" id="reflexion-heading">
+          <span class="highlight">Posición Crítica</span> &amp; Compromiso Ético
+        </h2>
+
+        <div class="reflection-grid">
+          <figure class="reflection-image-col" aria-hidden="true">
+            <img src="quote_reflection.jpg" alt="Figura humana de luz alcanzando hacia el conocimiento y la comprensión" loading="lazy" />
+          </figure>
+          <div class="reflection-content-col">
+            <article class="reflection-card glass-card">
+              <div class="reflection-decoration" aria-hidden="true">
+                <span class="r-deco-1"></span>
+                <span class="r-deco-2"></span>
+              </div>
+              <div class="reflection-quote-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="currentColor"><path d="M14 24 C14 18 18 14 24 14 L22 8 C12 8 6 16 6 24 L6 40 L22 40 L22 24 Z"/><path d="M34 24 C34 18 38 14 44 14 L42 8 C32 8 26 16 26 24 L26 40 L42 40 L42 24 Z"/></svg>
+              </div>
+              <blockquote class="main-reflection">
+                <p>
+                  Comprender y deconstruir las categorías de género no es un mero ejercicio teórico; es un
+                  <strong>imperativo ético y social</strong>. Nos permite reconocer que las identidades y los afectos
+                  no pueden encasillarse en mandatos biológicos o sociales impuestos.
+                </p>
+                <p>
+                  Como futuros profesionales, formarnos en estos conceptos desmantela prejuicios históricos,
+                  fomenta la empatía y nos compromete activamente en la construcción de entornos inclusivos,
+                  donde la <strong>dignidad humana y el libre desarrollo de la personalidad</strong> estén
+                  por encima de cualquier estereotipo.
+                </p>
+              </blockquote>
+              <div class="reflection-pillars">
+                <div class="pillar-item">
+                  <div class="pillar-icon pillar-ethics">⚖️</div>
+                  <span>Imperativo Ético</span>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon pillar-empathy">🤝</div>
+                  <span>Empatía Activa</span>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon pillar-dignity">✨</div>
+                  <span>Dignidad Humana</span>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon pillar-inclusion">🌐</div>
+                  <span>Inclusión Real</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== REFERENCES ===== -->
+      <section class="section-block section-refs" id="referencias" aria-labelledby="refs-heading">
+        <div class="section-label">Referencias Bibliográficas</div>
+        <h2 class="section-title" id="refs-heading">Fuentes & <span class="highlight">Bibliografía</span></h2>
+        <div class="refs-grid">
+          <div class="ref-item">
+            <div class="ref-num">01</div>
+            <div class="ref-text">
+              <strong>Butler, J.</strong> (1990). <em>El género en disputa: El feminismo y la subversión de la identidad</em>. Routledge.
+            </div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">02</div>
+            <div class="ref-text">
+              <strong>Salinas, M.</strong> (1994). <em>El cuerpo como territorio cultural</em>. Estudios Sociales Latinoamericanos.
+            </div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">03</div>
+            <div class="ref-text">
+              <strong>OMS.</strong> (1993). <em>Clasificación Internacional de Enfermedades, 10ª revisión (CIE-10)</em>. Organización Mundial de la Salud.
+            </div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">04</div>
+            <div class="ref-text">
+              <strong>Kinsey, A. C.</strong> (1948). <em>Sexual Behavior in the Human Male</em>. W. B. Saunders.
+            </div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">05</div>
+            <div class="ref-text">
+              <strong>Crenshaw, K.</strong> (1989). <em>Demarginalizing the Intersection of Race and Sex</em>. University of Chicago Legal Forum.
+            </div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">06</div>
+            <div class="ref-text">
+              <strong>Darwin, C.</strong> (1859). <em>On the Origin of Species by Means of Natural Selection</em>. John Murray.
+            </div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">07</div>
+            <div class="ref-text">
+              <strong>Corte Constitucional de Colombia.</strong> (2011). <em>Sentencia C-577</em>. Reconocimiento de derechos de parejas del mismo sexo.
+            </div>
+          </div>
+          <div class="ref-item">
+            <div class="ref-num">08</div>
+            <div class="ref-text">
+              <strong>APA.</strong> (1973). <em>Diagnostic and Statistical Manual of Mental Disorders (DSM-II, revised)</em>. American Psychiatric Association.
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="infographic-footer" role="contentinfo">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <svg viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="15" stroke="url(#footerGrad)" stroke-width="2"/>
+              <path d="M10 16 Q16 10 22 16 Q16 22 10 16Z" fill="url(#footerGrad)"/>
+              <defs>
+                <linearGradient id="footerGrad" x1="0" y1="0" x2="32" y2="32">
+                  <stop offset="0%" stop-color="#8B5CF6"/>
+                  <stop offset="100%" stop-color="#06B6D4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            Universidad del Quindío
+          </div>
+          <p>Infografía Académica · Ciencias Sociales · Unidad 2</p>
+        </div>
+        <div class="footer-center">
+          <div class="spectrum-bar" aria-hidden="true">
+            <div class="spectrum-segment"></div>
+            <div class="spectrum-segment"></div>
+            <div class="spectrum-segment"></div>
+            <div class="spectrum-segment"></div>
+            <div class="spectrum-segment"></div>
+            <div class="spectrum-segment"></div>
+          </div>
+          <p class="footer-motto">La diversidad es riqueza. La inclusión es justicia.</p>
+        </div>
+        <div class="footer-right">
+          <p>Elaborado por: <strong>Santiago Arbelaez Contreras</strong></p>
+          <p class="footer-tech">CC: 1001361185 · Ing. de Sistemas y Computación</p>
+          <p class="footer-year">© 2025 · Universidad del Quindío</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Institutional Footer Strip (Print / PDF Export only) -->
+    <div class="print-footer-banner" aria-hidden="true">
+      <span>Universidad del Quindío · Facultad de Ingeniería · Ing. de Sistemas y Computación</span>
+      <span>Santiago Arbelaez Contreras (CC: 1001361185)</span>
+      <span>Deconstrucción del Género &amp; Diversidad Sexual · 2025</span>
+    </div>
+
+  </div><!-- end infographic-wrapper -->
+
+  <script src="main.js"></script>
+</body>
+</html>
