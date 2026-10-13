@@ -22,6 +22,7 @@ dist/
 build/
 out/
 .cache/
+.vercel/
 
 # Archivos de exportación temporal / pruebas
 *.tmp

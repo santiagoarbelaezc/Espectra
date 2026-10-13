@@ -1,4 +1,8 @@
 {
+  "name": "espectra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Infografía Académica interactiva sobre la Deconstrucción del Género y Diversidad Sexual - Universidad del Quindío",
   "devDependencies": {
     "typescript": "^7.0.2"
   }

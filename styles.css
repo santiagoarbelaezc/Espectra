@@ -1682,98 +1682,51 @@ img {
 .reveal-delay-4 { transition-delay: 400ms; }
 
 /* ============================================================
-   PRINT STYLES
+   DECLARACIÓN DE INTELIGENCIA ARTIFICIAL — TRANSPARENCIA
    ============================================================ */
-@media print {
-  @page {
-    margin: 1.5cm;
-    size: A4 portrait;
-  }
-
-  * {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-    color-adjust: exact;
-  }
-
-  body {
-    background: white !important;
-    color: #111 !important;
-  }
-
-  .floating-controls,
-  .scroll-indicator {
-    display: none !important;
-  }
-
-  .infographic-header {
-    min-height: auto;
-    page-break-inside: avoid;
-  }
-
-  .header-bg-image img {
-    animation: none;
-    height: 280px;
-  }
-
-  .section-block {
-    page-break-inside: avoid;
-    padding: 2rem 1rem;
-  }
-
-  .timeline-item {
-    page-break-inside: avoid;
-  }
-
-  .concept-card {
-    page-break-inside: avoid;
-    border: 1px solid #ddd !important;
-    background: #f9f9f9 !important;
-  }
-
-  .tl-card {
-    border: 1px solid #ddd !important;
-    background: #f9f9f9 !important;
-  }
-
-  .glass-card {
-    border: 1px solid #ddd !important;
-    background: #f9f9f9 !important;
-  }
-
-  .card-expandable {
-    max-height: none !important;
-    opacity: 1 !important;
-  }
-
-  .timeline-path::before {
-    background: #ccc !important;
-  }
-
-  .header-title {
-    color: #111 !important;
-  }
-
-  .section-title {
-    color: #111 !important;
-  }
-
-  .card-title, .tl-title, .inc h3 {
-    color: #111 !important;
-  }
-
-  .text-secondary {
-    color: #444 !important;
-  }
-
-  .refs-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .infographic-footer {
-    page-break-before: always;
-  }
+.footer-ai-disclosure {
+  max-width: 1200px;
+  margin: var(--space-xl) auto 0 auto;
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--glass-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
+
+.ai-disclosure-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(139, 92, 246, 0.12);
+  color: var(--violet-light);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: var(--radius-pill);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  width: fit-content;
+  backdrop-filter: blur(8px);
+}
+
+[data-theme="light"] .ai-disclosure-badge {
+  background: rgba(109, 40, 217, 0.08);
+  color: #6d28d9;
+  border-color: rgba(109, 40, 217, 0.2);
+}
+
+.ai-disclosure-badge svg {
+  flex-shrink: 0;
+}
+
+.ai-disclosure-text {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
 
 /* ============================================================
    RESPONSIVE
@@ -2866,6 +2819,38 @@ img {
 
   .footer-year {
     color: #94a3b8 !important;
+  }
+
+  /* AI Disclosure Note in Print */
+  .footer-ai-disclosure {
+    margin-top: 0.85rem !important;
+    padding-top: 0.65rem !important;
+    border-top: 1px solid #cbd5e1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.35rem !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .ai-disclosure-badge {
+    background: #ede9fe !important;
+    color: #5b21b6 !important;
+    border: 1px solid #c7d2fe !important;
+    padding: 0.15rem 0.55rem !important;
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+    border-radius: 9999px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    width: fit-content !important;
+  }
+
+  .ai-disclosure-text {
+    font-size: 0.68rem !important;
+    color: #475569 !important;
+    line-height: 1.45 !important;
   }
 
   /* Institutional Footer Strip */
